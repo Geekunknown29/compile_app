@@ -119,7 +119,7 @@ export default function Home() {
               onChange={(e) => setPrompt(e.target.value)}
             />
             <div className="absolute bottom-4 right-4 flex gap-2">
-              <Button variant="secondary">
+              <Button className="bg-secondary hover:bg-secondary/80">
                 <UploadCloud className="w-4 h-4 mr-2" /> Media
               </Button>
               <Button onClick={handleGenerate} disabled={!prompt.trim()}>
