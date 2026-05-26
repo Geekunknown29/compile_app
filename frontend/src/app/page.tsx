@@ -119,7 +119,7 @@ export default function Home() {
               onChange={(e) => setPrompt(e.target.value)}
             />
             <div className="absolute bottom-4 right-4 flex gap-2">
-              <Button className="bg-secondary hover:bg-secondary/80">
+              <Button variant="secondary">
                 <UploadCloud className="w-4 h-4 mr-2" /> Media
               </Button>
               <Button onClick={handleGenerate} disabled={!prompt.trim()}>
@@ -325,7 +325,7 @@ export default function Home() {
                       <Button className="w-full" onClick={() => window.open(`http://localhost:8000/api/download/${jobId}`)}>
                         <FileCode2 className="w-4 h-4 mr-2" /> Download Project ZIP
                       </Button>
-                      <Button variant="outline" className="w-full" onClick={() => setStatus("idle")}>
+                     <Button className="w-full" onClick={() => setStatus("idle")}>
                         New Project
                       </Button>
                     </div>
